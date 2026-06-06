@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto Predica — Aprendé a ver más en la Biblia</title>
+  <meta name="description"
+    content="Plataforma de formación en predicación bíblica y estudio del texto de la Sociedad Bíblica Argentina." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Inicio — Proyecto Predica">
+        <img src="assets/img/logo-predica-preto.png" alt="Proyecto Predica" />
+      </a>
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#top">Inicio</a>
+        <a href="#curso">Curso</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
+      <a class="nav__cta" href="#sumate">Acceder gratis</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title">Aprendé a ver más en la Biblia.</h1>
+          <p class="hero__desc">Estudiar la Biblia con claridad y proclamarla con fidelidad.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="#curso">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" stroke="none" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4" />
+              </svg>
+              <span>Empezá ahora</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero__media" aria-hidden="true">
+          <div class="hero__media-frame">
+            <div class="hero__media-screen">
+              <div class="hero__media-page">
+                <span class="hero__media-cite">Génesis 1 · 1</span>
+                <p class="hero__media-text" id="heroType"
+                  data-text='"En el principio creó Dios los cielos y la tierra."'></p>
+              </div>
+              <div class="hero__media-pointer" id="heroPointer">
+                <svg viewBox="0 0 32 40" width="22" height="28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 2 L3 30 L10 23 L14 34 L19 32 L15 21 L26 21 Z" fill="var(--c-flame)" stroke="#fff"
+                    stroke-width="1.6" stroke-linejoin="round" />
+                  <line x1="15.5" y1="22" x2="15.5" y2="30" stroke="#fff" stroke-width="1" opacity=".55" />
+                </svg>
+              </div>
+            </div>
+            <div class="hero__media-bar" id="heroBar"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIBBON (animated) -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon__track">
+        <span>On demand</span><i>·</i>
+        <span>Gratuito</span><i>·</i>
+        <span>Respaldado por la Sociedad Bíblica Argentina</span><i>·</i>
+        <span>On demand</span><i>·</i>
+        <span>Gratuito</span><i>·</i>
+        <span>Respaldado por la Sociedad Bíblica Argentina</span><i>·</i>
+        <span>On demand</span><i>·</i>
+        <span>Gratuito</span><i>·</i>
+        <span>Respaldado por la Sociedad Bíblica Argentina</span><i>·</i>
+        <span>On demand</span><i>·</i>
+        <span>Gratuito</span><i>·</i>
+        <span>Respaldado por la Sociedad Bíblica Argentina</span><i>·</i>
+        <span>On demand</span><i>·</i>
+        <span>Gratuito</span><i>·</i>
+        <span>Respaldado por la Sociedad Bíblica Argentina</span><i>·</i>
+        <span>On demand</span><i>·</i>
+        <span>Gratuito</span><i>·</i>
+        <span>Respaldado por la Sociedad Bíblica Argentina</span><i>·</i>
+      </div>
+    </div>
+
+    <!-- MANIFIESTO -->
+    <section class="manifiesto">
+      <div class="container manifiesto__grid">
+        <div class="manifiesto__text">
+          <h2 class="section__title section__title--light" style="font-family: Oliviar Sans;">No hay otro libro como la
+            Biblia.</h2>
+          <p>Porque en la Biblia nos encontramos con Dios. Cada texto, cada argumento, cada palabra — escritos para que
+            podamos conocerlo, glorificarlo, proclamarlo.</p>
+          <p>Y hay más ahí de lo que la mayoría de nosotros ha llegado a ver. Mucho más. Pero la mayoría no aprendemos a
+            ver por nosotros mismos. ¿Y qué proclamaremos, si no son nuestros propios ojos los que hayan visto?</p>
+        </div>
+        <aside class="manifiesto__tools">
+          <h3 class="manifiesto__tools-title">Herramientas concretas para avanzar.</h3>
+          <p class="manifiesto__tools-sub">Simple, directo y práctico.</p>
+          <ul>
+            <li><span class="dot"></span>Videos breves de formación</li>
+            <li><span class="dot"></span>Guías descargables</li>
+            <li><span class="dot"></span>Preguntas de comprensión por módulo</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote">
+      <div class="container quote__inner">
+        <h2 class="quote__title">Ver con tus<br>propios ojos.</h2>
+        <blockquote class="quote__blockquote">
+          <p>"No podemos dejar de hablar de lo que hemos visto y oído."</p>
+          <cite>Hechos 4:20</cite>
+        </blockquote>
+        <p class="quote__body">Proyecto Predica te capacita para observar, entender y dar a conocer el mensaje del
+          texto con fidelidad, claridad y convicción.</p>
+      </div>
+    </section>
+
+    <!-- AUDIENCIA -->
+    <section class="audience" id="audiencia">
+      <div class="container">
+        <div class="section__head">
+          <span class="label">Pensado para vos</span>
+          <h2 class="section__title">Tres caminos. Un mismo texto.</h2>
+          <p class="section__lead">Para todos los que anhelamos ver más y más de los tesoros en la Escritura y anhelamos
+            que Su iglesia sea edificada por medio de la proclamación de Su Palabra.</p>
+        </div>
+        <div class="cards">
+          <article class="course-card">
+            <div class="course-card__img course-card__img--a" aria-hidden="true">
+              <svg class="course-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M5 24 C 8 16, 16 11, 24 11 C 32 11, 40 16, 43 24 C 40 32, 32 37, 24 37 C 16 37, 8 32, 5 24 Z" />
+                <circle cx="24" cy="24" r="5.5" />
+                <circle cx="24" cy="24" r="2" fill="currentColor" stroke="none" />
+              </svg>
+            </div>
+            <div class="course-card__body">
+              <h3 class="course-card__title">Querés ver más en la Palabra.</h3>
+              <p class="course-card__desc">Y querés herramientas concretas para mirarla de cerca.</p>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-card__img course-card__img--b" aria-hidden="true">
+              <svg class="course-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M10 9 C 16 7, 32 7, 38 9 C 39 9, 40 10, 40 11 L 40 38 C 40 39, 39 40, 38 40 C 32 38, 16 38, 10 40 C 9 40, 8 39, 8 38 L 8 11 C 8 10, 9 9, 10 9 Z" />
+                <path d="M24 8 C 24 8, 24 40, 24 40" />
+                <path d="M14 16 C 16 16, 18 16, 20 16 M14 22 C 16 22, 18 22, 20 22 M14 28 C 16 28, 18 28, 20 28" />
+                <path d="M28 16 C 30 16, 32 16, 34 16 M28 22 C 30 22, 32 22, 34 22 M28 28 C 30 28, 32 28, 34 28" />
+              </svg>
+            </div>
+            <div class="course-card__body">
+              <h3 class="course-card__title">Enseñás la Biblia en algún espacio.</h3>
+              <p class="course-card__desc">Y necesitás un método claro para estudiar el texto y proclamarlo con
+                fidelidad.</p>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-card__img course-card__img--c" aria-hidden="true">
+              <svg class="course-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 24 C 14 18, 34 18, 41 24" />
+                <path
+                  d="M9 24 C 9 24, 9 38, 9 38 C 9 39, 10 40, 11 40 L 37 40 C 38 40, 39 39, 39 38 C 39 38, 39 24, 39 24" />
+                <path d="M24 18 C 24 14, 24 10, 24 8 M21 11 C 22 10, 23 9, 24 9 C 25 9, 26 10, 27 11" />
+                <path
+                  d="M20 40 C 20 36, 20 32, 20 30 C 20 29, 21 28, 24 28 C 27 28, 28 29, 28 30 C 28 32, 28 36, 28 40" />
+                <circle cx="24" cy="6" r="1.4" fill="currentColor" stroke="none" />
+              </svg>
+            </div>
+            <div class="course-card__body">
+              <h3 class="course-card__title">Formás líderes en tu iglesia.</h3>
+              <p class="course-card__desc">Y querés que aprendan a estudiar y proclamar el texto con método y fidelidad.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURSO PRINCIPAL -->
+    <section class="featured" id="curso">
+      <div class="container">
+        <div class="featured__grid">
+          <div class="featured__media" aria-hidden="true">
+            <img class="featured__media-img" src="assets/img/nico.png" alt="">
+            <div class="featured__media-inner">
+              <span class="featured__badge">Curso 1</span>
+              <span class="featured__hours">4 módulos</span>
+            </div>
+            <div class="featured__media-typo">
+              <span class="featured__media-cite">Ver y proclamar por <strong>Nicolas Osório</strong></span>
+              <p>"Hch 4:20 — No podemos dejar de hablar de lo que hemos visto y oído."</p>
+            </div>
+          </div>
+          <div class="featured__content">
+            <span class="label">Curso 1 · Disponible</span>
+            <h2 class="featured__title">Ver y Proclamar.</h2>
+            <p class="featured__desc">Un recorrido inicial para ayudarte a preparar un sermón fiel, comprensible y
+              aplicable.</p>
+            <ul class="featured__lessons">
+              <li>
+                <i aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </i>
+                <div class="featured__lesson-text">
+                  <em>Módulo 1</em>
+                  <span>Encontrar el énfasis</span>
+                </div>
+              </li>
+              <li>
+                <i aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </i>
+                <div class="featured__lesson-text">
+                  <span>Leer el contexto</span>
+                  <em>Módulo 2</em>
+                </div>
+              </li>
+              <li>
+                <i aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </i>
+                <div class="featured__lesson-text">
+                  <em>Módulo 3</em>
+                  <span>El evangelio en el mensaje</span>
+                </div>
+              </li>
+              <li>
+                <i aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </i>
+                <div class="featured__lesson-text">
+                  <em>Módulo 4</em>
+                  <span>Proposición y bosquejo</span>
+                </div>
+              </li>
+            </ul>
+            <a class="btn btn--primary" href="#sumate">Acceder gratis al curso</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP — 3 cards (formato cards do wireframe) -->
+    <section class="roadmap" id="recursos">
+      <div class="container">
+        <div class="section__head">
+          <span class="label">Esto recién empieza</span>
+          <h2 class="section__title">Una ruta de formación con continuidad.</h2>
+        </div>
+        <div class="cards">
+          <article class="course-card course-card--roadmap is-active">
+            <div class="course-card__img course-card__img--a" aria-hidden="true">
+              <span class="course-card__img-num">01</span>
+            </div>
+            <div class="course-card__body">
+              <span class="course-card__cat">Curso 1 · Disponible</span>
+              <h3 class="course-card__title">Ver y Proclamar</h3>
+              <p class="course-card__desc">Comenzá hoy tu formación con contenido práctico.</p>
+              <div class="course-card__meta">
+                <span>4 módulos</span>
+                <span>On demand</span>
+              </div>
+            </div>
+          </article>
+          <article class="course-card course-card--roadmap course-card--soon-75">
+            <div class="course-card__img course-card__img--b" aria-hidden="true">
+              <span class="course-card__img-num">02</span>
+            </div>
+            <div class="course-card__body">
+              <span class="course-card__cat">Curso 2 · Próximamente</span>
+              <h3 class="course-card__title">Próximamente</h3>
+              <p class="course-card__desc">Una nueva etapa del recorrido, en preparación.</p>
+              <div class="course-card__meta">
+                <span>Por anunciar</span>
+                <span>Próximamente</span>
+              </div>
+            </div>
+          </article>
+          <div class="course-card__anchor">
+            <article class="course-card course-card--roadmap course-card--soon-40">
+              <div class="course-card__img course-card__img--c" aria-hidden="true">
+                <span class="course-card__img-num">03</span>
+              </div>
+              <div class="course-card__body">
+                <span class="course-card__cat">Curso 3 · Próximamente</span>
+                <h3 class="course-card__title">Próximamente</h3>
+                <p class="course-card__desc">Una nueva etapa del recorrido, en preparación.</p>
+                <div class="course-card__meta">
+                  <span>Por anunciar</span>
+                  <span>Próximamente</span>
+                </div>
+              </div>
+            </article>
+            <div class="course-card__badge" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="100%" height="100%">
+                <path
+                  d="M 60,60 m -54,0 a 54,54 0 1,0 108,0 a 54,54 0 1,0 -108,0 M 60,60 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"
+                  fill="#1a1f47" fill-rule="evenodd" />
+                <defs>
+                  <path id="badgeCircleRoadmap" d="M 60,60 m -44,0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0" />
+                </defs>
+                <text class="badge__text" fill="#fff" font-size="11" font-weight="700" letter-spacing="3">
+                  <textPath href="#badgeCircleRoadmap" startOffset="0">PROYECTO PREDICA · PROYECTO PREDICA · </textPath>
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <a class="roadmap__more" href="#">Más cursos por venir <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="container about__grid">
+        <div class="about__media">
+          <div class="about__dots" aria-hidden="true"></div>
+          <div class="about__blob" aria-hidden="true"></div>
+          <video class="about__photo" src="assets/video/video-nico.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="about__content">
+          <span class="label">Sobre el proyecto</span>
+          <p class="about__quote">Más que una plataforma, es un acompañamiento. Un instructor que se sienta a tu
+            lado — no a darte sus conclusiones sobre el texto, sino a enseñarte a ver por vos mismo.</p>
+          <div class="about__attr">
+            <a class="about__link" href="#curso">Conocé más <span aria-hidden="true">→</span></a>
+          </div>
+
+          <p class="about__supporting">Proyecto Predica es la plataforma de formación en predicación bíblica y estudio
+            del texto bíblico de la Sociedad Bíblica Argentina. Cursos cortos en video, gratuitos, disponibles cuando y
+            donde los necesitás. Sin requisitos de entrada. Al ritmo de tu semana.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUMATE -->
+    <section class="sumate" id="sumate">
+      <div class="container">
+        <div class="sumate__card">
+          <span class="sumate__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" width="18" height="18">
+              <path d="M5 4h11l3 3v13H5z" />
+              <path d="M9 9h6M9 13h6M9 17h4" />
+            </svg>
+          </span>
+          <div class="sumate__copy">
+            <h2>Sumate al lanzamiento.</h2>
+            <p>Accedé de manera gratuita al primer curso de proyecto Predica y comenzá a preparate con una ruta clara,
+              biblica y práctica.</p>
+          </div>
+          <a class="btn btn--secondary" href="#curso">Acceder gratis al curso</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="footer__logo">
+          <img src="assets/img/logo-predica-branca.png" alt="Proyecto Predica" />
+        </a>
+        <p>Proyecto Predica · Sociedad Bíblica Argentina</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h6>Navegación</h6>
+          <a href="#top">Inicio</a>
+          <a href="#curso">Curso</a>
+          <a href="#sumate">Sumarme</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div>
+          <h6>Recursos</h6>
+          <a href="#">Blog</a>
+          <a href="#">Guías</a>
+          <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div>
+          <h6>Seguinos</h6>
+          <a href="#">YouTube</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__base container">
+      <span>© Proyecto Predica · Todos los derechos reservados.</span>
+      <span><a href="#">Términos y condiciones</a> · <a href="#">Política de privacidad</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
