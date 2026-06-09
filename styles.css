@@ -751,9 +751,9 @@ section {
 }
 
 .manifiesto__blockquote p {
-  font-family: var(--ff-text);
-  font-weight: 600;
-  font-size: clamp(15px, 1.6vw, 20px);
+  font-family: var(--ff-script);
+  font-weight: 400;
+  font-size: clamp(18px, 2vw, 26px);
   line-height: 1.4;
   color: #fff;
   margin: 0 0 8px;
@@ -876,6 +876,14 @@ section {
 
 .course-card__img--c {
   background: rgba(255, 255, 255, .12);
+}
+
+.audience .course-card__img--a {
+  background: var(--c-flame);
+}
+
+.audience .course-card__img--b {
+  background: var(--c-deep);
 }
 
 .audience .course-card__img--c {
@@ -1790,10 +1798,10 @@ section {
   }
 
   .course-card__badge {
-    width: 76px;
-    height: 76px;
-    right: 10px;
-    top: 8px;
+    width: 120px;
+    height: 120px;
+    right: -40px;
+    top: 12px;
     bottom: auto;
   }
 
@@ -1859,6 +1867,7 @@ section {
   }
 
   .hero {
+    min-height: 70vh;
     padding: calc(var(--nav-h) + 20px) 16px 12px;
   }
 
