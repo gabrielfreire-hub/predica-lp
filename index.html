@@ -9,7 +9,9 @@
     content="Plataforma de formación en predicación bíblica y estudio del texto de la Sociedad Bíblica Argentina." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -19,12 +21,13 @@
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#top" class="nav__logo" aria-label="Inicio — Proyecto Predica">
-        <img src="assets/img/logo-predica-preto.png" alt="Proyecto Predica" />
+        <span class="nav__slash">/</span><span class="nav__word">PROYECTO</span><strong>PREDICA</strong>
       </a>
       <nav class="nav__links" aria-label="Navegación principal">
         <a href="#top">Inicio</a>
-        <a href="#curso">Curso</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#manifiesto">Manifiesto</a>
+        <a href="#metodo">Método</a>
+        <a href="#curso">Cursos</a>
       </nav>
       <a class="nav__cta" href="#sumate">Acceder gratis</a>
       <button class="nav__burger" id="navBurger" aria-label="Menú" aria-expanded="false">
@@ -36,48 +39,20 @@
   <main id="top">
 
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__copy">
-          <h1 class="hero__title">Aprendé a ver más en la Biblia.</h1>
-          <p class="hero__desc">Estudiar la Biblia con claridad y proclamarla con fidelidad.</p>
-          <div class="hero__ctas">
-            <a class="btn btn--primary" href="#curso">
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" stroke="none" aria-hidden="true">
-                <polygon points="6 4 20 12 6 20 6 4" />
-              </svg>
-              <span>Empezá ahora</span>
-            </a>
-          </div>
-        </div>
-        <div class="hero__media" aria-hidden="true">
-          <div class="hero__media-frame">
-            <div class="hero__media-screen">
-              <div class="hero__media-page">
-                <span class="hero__media-cite">Génesis 1 · 1</span>
-                <p class="hero__media-text" id="heroType"
-                  data-text='"En el principio creó Dios los cielos y la tierra."'></p>
-              </div>
-              <div class="hero__media-pointer" id="heroPointer">
-                <svg viewBox="0 0 32 40" width="22" height="28" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 2 L3 30 L10 23 L14 34 L19 32 L15 21 L26 21 Z" fill="var(--c-flame)" stroke="#fff"
-                    stroke-width="1.6" stroke-linejoin="round" />
-                  <line x1="15.5" y1="22" x2="15.5" y2="30" stroke="#fff" stroke-width="1" opacity=".55" />
-                </svg>
-              </div>
-            </div>
-            <div class="hero__media-bar" id="heroBar"><span></span></div>
-          </div>
-        </div>
+    <header class="hero" id="hero" data-parallax-hero>
+      <div class="hero__bg" style="background-image: url('assets/img/fundo-laranja.jpg')"></div>
+      <div class="hero__center">
+        <h1 class="hero__title">
+          <span class="hero__slash">/</span><span class="hero__proyecto">PROYECTO</span><br />
+          <strong>PREDICA<span class="hero__dot">.</span></strong>
+        </h1>
       </div>
-    </section>
 
-    <!-- RIBBON (animated) -->
+    </header>
+
+    <!-- RIBBON -->
     <div class="ribbon" aria-hidden="true">
       <div class="ribbon__track">
-        <span>On demand</span><i>·</i>
-        <span>Gratuito</span><i>·</i>
-        <span>Respaldado por la Sociedad Bíblica Argentina</span><i>·</i>
         <span>On demand</span><i>·</i>
         <span>Gratuito</span><i>·</i>
         <span>Respaldado por la Sociedad Bíblica Argentina</span><i>·</i>
@@ -97,49 +72,39 @@
     </div>
 
     <!-- MANIFIESTO -->
-    <section class="manifiesto">
-      <div class="container manifiesto__grid">
+    <section class="manifiesto reveal" id="manifiesto">
+      <div class="manifiesto__bg" aria-hidden="true" data-parallax>
+        <span>MANI</span><span>FIES</span><span>TO</span>
+      </div>
+      <div class="container">
         <div class="manifiesto__text">
-          <h2 class="section__title section__title--light" style="font-family: Oliviar Sans;">No hay otro libro como la
-            Biblia.</h2>
+          <h2 class="section__title section__title--light">No hay otro libro como la Biblia.</h2>
           <p>Porque en la Biblia nos encontramos con Dios. Cada texto, cada argumento, cada palabra — escritos para que
             podamos conocerlo, glorificarlo, proclamarlo.</p>
           <p>Y hay más ahí de lo que la mayoría de nosotros ha llegado a ver. Mucho más. Pero la mayoría no aprendemos a
             ver por nosotros mismos. ¿Y qué proclamaremos, si no son nuestros propios ojos los que hayan visto?</p>
         </div>
-        <aside class="manifiesto__tools">
-          <h3 class="manifiesto__tools-title">Herramientas concretas para avanzar.</h3>
-          <p class="manifiesto__tools-sub">Simple, directo y práctico.</p>
-          <ul>
-            <li><span class="dot"></span>Videos breves de formación</li>
-            <li><span class="dot"></span>Guías descargables</li>
-            <li><span class="dot"></span>Preguntas de comprensión por módulo</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <!-- QUOTE -->
-    <section class="quote">
-      <div class="container quote__inner">
-        <h2 class="quote__title">Ver con tus<br>propios ojos.</h2>
-        <blockquote class="quote__blockquote">
-          <p>"No podemos dejar de hablar de lo que hemos visto y oído."</p>
-          <cite>Hechos 4:20</cite>
-        </blockquote>
-        <p class="quote__body">Proyecto Predica te capacita para observar, entender y dar a conocer el mensaje del
-          texto con fidelidad, claridad y convicción.</p>
+        <div class="manifiesto__quote">
+          <h3 class="manifiesto__quote-title">Ver con tus propios ojos.</h3>
+          <blockquote class="manifiesto__blockquote">
+            <p>"No podemos dejar de hablar de lo que hemos visto y oído."</p>
+            <cite>Hechos 4:20</cite>
+          </blockquote>
+          <p class="manifiesto__body">Proyecto Predica te capacita para observar, entender y dar a conocer el mensaje del
+            texto con fidelidad, claridad y convicción.</p>
+        </div>
       </div>
     </section>
 
     <!-- AUDIENCIA -->
-    <section class="audience" id="audiencia">
+    <section class="audience reveal" id="metodo">
+      <div class="audience__bg" aria-hidden="true" data-parallax>
+        <span>MÉTO</span><span>DO</span>
+      </div>
       <div class="container">
         <div class="section__head">
-          <span class="label">Pensado para vos</span>
-          <h2 class="section__title">Tres caminos. Un mismo texto.</h2>
-          <p class="section__lead">Para todos los que anhelamos ver más y más de los tesoros en la Escritura y anhelamos
-            que Su iglesia sea edificada por medio de la proclamación de Su Palabra.</p>
+          <h2 class="section__title">Pensado para vos</h2>
+          <p class="section__sub">Tres caminos. Un mismo texto.</p>
         </div>
         <div class="cards">
           <article class="course-card">
@@ -194,11 +159,13 @@
             </div>
           </article>
         </div>
+        <p class="audience__text">Para todos los que anhelamos ver más y más de los tesoros en la Escritura y anhelamos
+          que Su iglesia sea edificada por medio de la proclamación de Su Palabra.</p>
       </div>
     </section>
 
     <!-- CURSO PRINCIPAL -->
-    <section class="featured" id="curso">
+    <section class="featured reveal" id="curso">
       <div class="container">
         <div class="featured__grid">
           <div class="featured__media" aria-hidden="true">
@@ -206,10 +173,6 @@
             <div class="featured__media-inner">
               <span class="featured__badge">Curso 1</span>
               <span class="featured__hours">4 módulos</span>
-            </div>
-            <div class="featured__media-typo">
-              <span class="featured__media-cite">Ver y proclamar por <strong>Nicolas Osório</strong></span>
-              <p>"Hch 4:20 — No podemos dejar de hablar de lo que hemos visto y oído."</p>
             </div>
           </div>
           <div class="featured__content">
@@ -273,8 +236,8 @@
       </div>
     </section>
 
-    <!-- ROADMAP — 3 cards (formato cards do wireframe) -->
-    <section class="roadmap" id="recursos">
+    <!-- ROADMAP -->
+    <section class="roadmap reveal">
       <div class="container">
         <div class="section__head">
           <span class="label">Esto recién empieza</span>
@@ -283,7 +246,7 @@
         <div class="cards">
           <article class="course-card course-card--roadmap is-active">
             <div class="course-card__img course-card__img--a" aria-hidden="true">
-              <span class="course-card__img-num">01</span>
+              <img src="assets/img/curso-1.jpg" alt="Curso 1 - Ver y Proclamar" class="course-card__img-bg">
             </div>
             <div class="course-card__body">
               <span class="course-card__cat">Curso 1 · Disponible</span>
@@ -328,7 +291,7 @@
               <svg viewBox="0 0 120 120" width="100%" height="100%">
                 <path
                   d="M 60,60 m -54,0 a 54,54 0 1,0 108,0 a 54,54 0 1,0 -108,0 M 60,60 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"
-                  fill="#1a1f47" fill-rule="evenodd" />
+                  fill="var(--c-flame)" fill-rule="evenodd" />
                 <defs>
                   <path id="badgeCircleRoadmap" d="M 60,60 m -44,0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0" />
                 </defs>
@@ -339,35 +302,35 @@
             </div>
           </div>
         </div>
-        <a class="roadmap__more" href="#">Más cursos por venir <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="about">
+    <section class="about reveal">
       <div class="container about__grid">
+        <div class="about__content">
+          <h2 class="about__title">Proyecto Predica</h2>
+          <p class="about__sub">Su Palabra, proclamada.</p>
+          <p class="about__desc">Proyecto Predica es la plataforma de formación en predicación bíblica y estudio
+            del texto bíblico de la Sociedad Bíblica Argentina.</p>
+          <p class="about__desc">Pero más que una plataforma, es un acompañamiento. Un instructor que se sienta a tu
+            lado — no a darte sus conclusiones sobre el texto, sino a enseñarte a ver por vos mismo. A que puedas abrir
+            cualquier pasaje y ver lo que hay ahí: lo que el autor quiso decir, por qué lo dijo así, cómo se conecta con
+            el resto de la Escritura.</p>
+          <p class="about__desc">Cursos cortos en video, gratuitos, disponibles cuando y donde los necesitás. Sin
+            requisitos de entrada. Al ritmo de tu semana.</p>
+          <p class="about__closing">Para ver y proclamar.</p>
+        </div>
         <div class="about__media">
           <div class="about__dots" aria-hidden="true"></div>
           <div class="about__blob" aria-hidden="true"></div>
           <video class="about__photo" src="assets/video/video-nico.mp4" autoplay loop muted playsinline></video>
         </div>
-        <div class="about__content">
-          <span class="label">Sobre el proyecto</span>
-          <p class="about__quote">Más que una plataforma, es un acompañamiento. Un instructor que se sienta a tu
-            lado — no a darte sus conclusiones sobre el texto, sino a enseñarte a ver por vos mismo.</p>
-          <div class="about__attr">
-            <a class="about__link" href="#curso">Conocé más <span aria-hidden="true">→</span></a>
-          </div>
-
-          <p class="about__supporting">Proyecto Predica es la plataforma de formación en predicación bíblica y estudio
-            del texto bíblico de la Sociedad Bíblica Argentina. Cursos cortos en video, gratuitos, disponibles cuando y
-            donde los necesitás. Sin requisitos de entrada. Al ritmo de tu semana.</p>
-        </div>
       </div>
     </section>
 
     <!-- SUMATE -->
-    <section class="sumate" id="sumate">
+    <section class="sumate reveal" id="sumate">
       <div class="container">
         <div class="sumate__card">
           <span class="sumate__icon" aria-hidden="true">
@@ -394,7 +357,7 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#top" class="footer__logo">
-          <img src="assets/img/logo-predica-branca.png" alt="Proyecto Predica" />
+          <span class="footer__mark"><span class="footer__slash">/</span>PROYECTO <strong>PREDICA</strong></span>
         </a>
         <p>Proyecto Predica · Sociedad Bíblica Argentina</p>
       </div>
@@ -402,9 +365,9 @@
         <div>
           <h6>Navegación</h6>
           <a href="#top">Inicio</a>
-          <a href="#curso">Curso</a>
-          <a href="#sumate">Sumarme</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#manifiesto">Manifiesto</a>
+          <a href="#metodo">Método</a>
+          <a href="#curso">Cursos</a>
         </div>
         <div>
           <h6>Recursos</h6>
