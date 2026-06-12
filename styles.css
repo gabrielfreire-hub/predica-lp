@@ -93,6 +93,65 @@ main {
   width: 100%;
 }
 
+/* --------- Loader --------- */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: var(--c-ink);
+  color: #fff;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  transition: .6s ease;
+}
+
+.loader--out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.loader__mark {
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: clamp(28px, 6vw, 72px);
+  letter-spacing: -.02em;
+  text-transform: uppercase;
+}
+
+.loader__mark span {
+  color: var(--c-flame);
+  font-weight: 900;
+}
+
+.loader__bar {
+  width: 100%;
+  max-width: 500px;
+  height: 2px;
+  background: rgba(255, 255, 255, .15);
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.loader__bar span {
+  display: block;
+  height: 100%;
+  width: 30%;
+  background: var(--c-flame);
+  animation: bar 1.2s ease-in-out infinite;
+}
+
+@keyframes bar {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(440%); }
+}
+
 img,
 video,
 svg {
@@ -455,6 +514,12 @@ em {
   font-size: 1em;
 }
 
+.hero__logo {
+  width: 50vw;
+  height: auto;
+  display: block;
+}
+
 .hero__dot {
   color: var(--c-blast);
 }
@@ -727,7 +792,7 @@ section {
   line-height: 1.65;
   color: rgba(255, 255, 255, .78);
   margin: 0 0 16px;
-  max-width: 60ch;
+  max-width: 81ch;
 }
 
 .manifiesto__quote {
@@ -795,6 +860,12 @@ section {
   margin: 40px 0 0;
   position: relative;
   z-index: 1;
+}
+
+.audience .section__sub {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--c-muted);
 }
 
 .audience__bg {
@@ -1197,6 +1268,11 @@ section {
   border-color: rgba(255, 255, 255, .3);
 }
 
+.roadmap__cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
 .course-card__img-num {
   font-family: var(--ff-display);
   font-weight: 900;
@@ -1509,6 +1585,12 @@ section {
   min-width: 0;
 }
 
+.footer__logo-img {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
 .footer__mark {
   font-family: var(--ff-display);
   font-weight: 300;
@@ -1730,6 +1812,10 @@ section {
 
   .hero__title {
     font-size: clamp(48px, 13vw, 80px);
+  }
+
+  .hero__logo {
+    width: 70vw;
   }
 
   .hero__desc {

@@ -7,6 +7,17 @@
 
   document.documentElement.classList.add('js');
 
+  // ---------- LOADER ----------
+  var loader = document.getElementById('loader');
+  if (loader) {
+    setTimeout(function () {
+      loader.classList.add('loader--out');
+      setTimeout(function () {
+        loader.remove();
+      }, 600);
+    }, 1500);
+  }
+
   var nav = document.getElementById('nav');
   var burger = document.getElementById('navBurger');
 
